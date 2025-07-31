@@ -1,0 +1,226 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Page Not Found - Little Wonders Photography Studio</title>
+    
+    <!-- Tailwind CSS via CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    
+    <!-- Configure Tailwind with custom colors and fonts -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: {
+                            50: '#f5f3ff',
+                            100: '#ede9fe',
+                            200: '#ddd6fe',
+                            300: '#c4b5fd',
+                            400: '#a78bfa',
+                            500: '#8b5cf6',
+                            600: '#7c3aed',
+                            700: '#6d28d9',
+                            800: '#5b21b6',
+                            900: '#4c1d95',
+                        },
+                        secondary: {
+                            50: '#fdf2f8',
+                            100: '#fce7f3',
+                            200: '#fbcfe8',
+                            300: '#f9a8d4',
+                            400: '#f472b6',
+                            500: '#ec4899',
+                            600: '#db2777',
+                            700: '#be185d',
+                            800: '#9d174d',
+                            900: '#831843',
+                        },
+                        neutral: {
+                            50: '#fafafa',
+                            100: '#f5f5f5',
+                            200: '#e5e5e5',
+                            300: '#d4d4d4',
+                            400: '#a3a3a3',
+                            500: '#737373',
+                            600: '#525252',
+                            700: '#404040',
+                            800: '#262626',
+                            900: '#171717',
+                        },
+                    },
+                    fontFamily: {
+                        sans: ['Montserrat', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif'],
+                        handwriting: ['Dancing Script', 'cursive'],
+                    },
+                }
+            }
+        }
+    </script>
+    
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Dancing+Script:wght@400;700&family=Montserrat:wght@300;400;500;600;700&family=Playfair+Display:ital,wght@0,400;0,700;1,400&display=swap" rel="stylesheet">
+    
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="styles.css">
+</head>
+<body class="bg-neutral-50 font-sans">
+    <!-- Page Loader -->
+    <div id="page-loader" class="fixed inset-0 bg-white z-50 flex items-center justify-center transition-opacity duration-500">
+        <div class="loader-spinner"></div>
+    </div>
+
+    <!-- Navigation -->
+    <nav class="bg-white shadow-md sticky top-0 z-40">
+        <div class="container mx-auto px-4 sm:px-6 lg:px-8">
+            <div class="flex justify-between h-16">
+                <!-- Logo -->
+                <div class="flex-shrink-0 flex items-center">
+                    <a href="index.html" class="font-handwriting text-2xl sm:text-3xl font-bold text-primary-600">Little Wonders</a>
+                </div>
+                
+                <!-- Desktop Navigation -->
+                <div class="hidden md:flex items-center space-x-4">
+                    <a href="index.html" class="px-3 py-2 text-sm font-medium text-neutral-600 hover:text-primary-600 transition-colors">Home</a>
+                    <a href="services.html" class="px-3 py-2 text-sm font-medium text-neutral-600 hover:text-primary-600 transition-colors">Services</a>
+                    <a href="portfolio.html" class="px-3 py-2 text-sm font-medium text-neutral-600 hover:text-primary-600 transition-colors">Portfolio</a>
+                    <a href="offers.html" class="px-3 py-2 text-sm font-medium text-neutral-600 hover:text-primary-600 transition-colors">Offers</a>
+                    <a href="contact.html" class="px-3 py-2 text-sm font-medium text-neutral-600 hover:text-primary-600 transition-colors">Contact</a>
+                    <a href="contact.html" class="ml-4 px-4 py-2 text-sm font-medium text-white bg-primary-600 rounded-md hover:bg-primary-700 transition-colors">Book a Session</a>
+                </div>
+                
+                <!-- Mobile menu button -->
+                <div class="md:hidden flex items-center">
+                    <button id="mobile-menu-button" class="text-neutral-600 hover:text-primary-600 focus:outline-none">
+                        <svg class="h-6 w-6" fill="none" viewBox="0 0 24 24" stroke="currentColor">
+                            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M4 6h16M4 12h16M4 18h16"></path>
+                        </svg>
+                    </button>
+                </div>
+            </div>
+        </div>
+        
+        <!-- Mobile Navigation -->
+        <div id="mobile-menu" class="hidden md:hidden bg-white border-t border-neutral-200">
+            <div class="px-2 pt-2 pb-3 space-y-1 sm:px-3">
+                <a href="index.html" class="block px-3 py-2 text-base font-medium text-neutral-600 hover:text-primary-600 transition-colors">Home</a>
+                <a href="services.html" class="block px-3 py-2 text-base font-medium text-neutral-600 hover:text-primary-600 transition-colors">Services</a>
+                <a href="portfolio.html" class="block px-3 py-2 text-base font-medium text-neutral-600 hover:text-primary-600 transition-colors">Portfolio</a>
+                <a href="offers.html" class="block px-3 py-2 text-base font-medium text-neutral-600 hover:text-primary-600 transition-colors">Offers</a>
+                <a href="contact.html" class="block px-3 py-2 text-base font-medium text-neutral-600 hover:text-primary-600 transition-colors">Contact</a>
+                <a href="contact.html" class="block mt-4 mx-3 px-4 py-2 text-base font-medium text-center text-white bg-primary-600 rounded-md hover:bg-primary-700 transition-colors">Book a Session</a>
+            </div>
+        </div>
+    </nav>
+
+    <!-- 404 Content -->
+    <main class="container mx-auto px-4 py-16 text-center">
+        <div class="max-w-3xl mx-auto">
+            <h1 class="text-9xl font-bold text-primary-300 mb-4">404</h1>
+            <h2 class="text-3xl font-serif mb-6">Oops! Page Not Found</h2>
+            <p class="text-lg text-neutral-600 mb-8">The page you are looking for might have been removed, had its name changed, or is temporarily unavailable.</p>
+            
+            <!-- Baby illustration -->
+            <div class="my-12">
+                <svg class="w-64 h-64 mx-auto" viewBox="0 0 200 200" xmlns="http://www.w3.org/2000/svg">
+                    <circle cx="100" cy="100" r="50" fill="#f9a8d4" />
+                    <circle cx="85" cy="90" r="5" fill="#404040" />
+                    <circle cx="115" cy="90" r="5" fill="#404040" />
+                    <path d="M90 110 Q100 120 110 110" stroke="#404040" stroke-width="2" fill="none" />
+                </svg>
+            </div>
+            
+            <div class="flex flex-col sm:flex-row justify-center gap-4 mt-8">
+                <a href="index.html" class="px-6 py-3 bg-primary-600 text-white rounded-md hover:bg-primary-700 transition-colors">
+                    <i class="fas fa-home mr-2"></i> Back to Home
+                </a>
+                <a href="contact.html" class="px-6 py-3 bg-secondary-500 text-white rounded-md hover:bg-secondary-600 transition-colors">
+                    <i class="fas fa-envelope mr-2"></i> Contact Us
+                </a>
+            </div>
+        </div>
+    </main>
+
+    <!-- Footer -->
+    <footer class="bg-neutral-800 text-white pt-12 pb-6">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-handwriting mb-4">Little Wonders</h3>
+                    <p class="mb-2"><i class="fas fa-map-marker-alt mr-2 text-secondary-400"></i> 123 Photography Lane, Velachery, Chennai - 600042</p>
+                    <p class="mb-2"><i class="fas fa-phone mr-2 text-secondary-400"></i> +91 98765 43210</p>
+                    <p class="mb-4"><i class="fas fa-envelope mr-2 text-secondary-400"></i> hello@littlewonders.com</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-secondary-400 transition-colors"><i class="fab fa-facebook-f"></i></a>
+                        <a href="#" class="text-white hover:text-secondary-400 transition-colors"><i class="fab fa-instagram"></i></a>
+                        <a href="#" class="text-white hover:text-secondary-400 transition-colors"><i class="fab fa-pinterest"></i></a>
+                        <a href="#" class="text-white hover:text-secondary-400 transition-colors"><i class="fab fa-youtube"></i></a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-lg font-medium mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-neutral-300 hover:text-white transition-colors">Home</a></li>
+                        <li><a href="services.html" class="text-neutral-300 hover:text-white transition-colors">Services</a></li>
+                        <li><a href="portfolio.html" class="text-neutral-300 hover:text-white transition-colors">Portfolio</a></li>
+                        <li><a href="offers.html" class="text-neutral-300 hover:text-white transition-colors">Offers</a></li>
+                        <li><a href="contact.html" class="text-neutral-300 hover:text-white transition-colors">Contact</a></li>
+                        <li><a href="privacy-policy.html" class="text-neutral-300 hover:text-white transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Business Hours -->
+                <div>
+                    <h3 class="text-lg font-medium mb-4">Studio Hours</h3>
+                    <ul class="space-y-2">
+                        <li class="flex justify-between">
+                            <span>Monday - Friday:</span>
+                            <span>10:00 AM - 7:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Saturday:</span>
+                            <span>9:00 AM - 8:00 PM</span>
+                        </li>
+                        <li class="flex justify-between">
+                            <span>Sunday:</span>
+                            <span>By Appointment Only</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-neutral-700 mt-8 pt-6 text-center text-neutral-400">
+                <p>&copy; 2023 Little Wonders Photography Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="fixed bottom-6 right-6 bg-primary-600 text-white rounded-full p-3 shadow-lg opacity-0 invisible transition-all duration-300 hover:bg-primary-700">
+        <svg class="w-6 h-6" fill="none" stroke="currentColor" viewBox="0 0 24 24" xmlns="http://www.w3.org/2000/svg">
+            <path stroke-linecap="round" stroke-linejoin="round" stroke-width="2" d="M5 10l7-7m0 0l7 7m-7-7v18"></path>
+        </svg>
+    </button>
+
+    <!-- JavaScript -->
+    <script src="js/page-loader.js"></script>
+    <script src="main.js"></script>
+    <!-- Schema.org Structured Data -->
+    <script src="js/schema.js"></script>
+    <!-- Social Sharing -->
+    <script src="js/social-share.js"></script>
+    <!-- Cookie Consent -->
+    <script src="js/cookie-consent.js"></script>
+</body>
+</html>

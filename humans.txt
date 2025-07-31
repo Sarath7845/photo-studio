@@ -1,0 +1,22 @@
+/* TEAM */
+
+Developer: Priyanka Ruthrappan
+Contact: priyanka@example.com
+Location: Chennai, India
+
+Designer: Little Wonders Design Team
+Contact: design@littlewonders.com
+Location: Chennai, India
+
+Photographer: Little Wonders Photography Team
+Contact: photos@littlewonders.com
+Location: Chennai, India
+
+/* SITE */
+
+Last update: 2023/11/01
+Language: English
+Doctype: HTML5
+Standards: HTML5, CSS3, JavaScript ES6+
+Components: Tailwind CSS, Font Awesome, AOS Animation
+Software: Visual Studio Code, Adobe Photoshop, Figma

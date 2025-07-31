@@ -1,0 +1,599 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Our Services | Little Wonders Photography Studio</title>
+    <meta name="description" content="Explore our newborn, maternity, milestone, and family photography services at Little Wonders Photography Studio in Velachery, Chennai.">
+    <!-- Tailwind CSS CDN -->
+    <script src="https://cdn.tailwindcss.com"></script>
+    <!-- Custom Tailwind Configuration -->
+    <script>
+        tailwind.config = {
+            theme: {
+                extend: {
+                    colors: {
+                        primary: '#f9d5e5', // soft pink
+                        secondary: '#eeac99', // peach
+                        accent: '#6c4675', // purple
+                        light: '#f6f6f6',
+                        dark: '#333333'
+                    },
+                    fontFamily: {
+                        sans: ['Poppins', 'sans-serif'],
+                        serif: ['Playfair Display', 'serif']
+                    }
+                }
+            }
+        }
+    </script>
+    <!-- Google Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@400;500;600;700&family=Poppins:wght@300;400;500;600&display=swap" rel="stylesheet">
+    <!-- Font Awesome -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css">
+    <!-- Custom CSS -->
+    <link rel="stylesheet" href="css/styles.css">
+    <!-- AOS Animation Library -->
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.css">
+</head>
+<body class="font-sans text-dark bg-light">
+    <!-- Navigation Bar -->
+    <nav class="bg-white shadow-md fixed w-full z-50 transition-all duration-300" id="navbar">
+        <div class="container mx-auto px-4 py-3">
+            <div class="flex justify-between items-center">
+                <!-- Logo -->
+                <a href="index.html" class="flex items-center">
+                    <span class="text-2xl font-serif font-bold text-accent">Little Wonders</span>
+                </a>
+                
+                <!-- Desktop Menu -->
+                <div class="hidden md:flex space-x-8">
+                    <a href="index.html" class="text-dark hover:text-accent transition-colors font-medium">Home</a>
+                    <a href="services.html" class="text-accent hover:text-secondary transition-colors font-medium">Services</a>
+                    <a href="portfolio.html" class="text-dark hover:text-accent transition-colors font-medium">Portfolio</a>
+                    <a href="offers.html" class="text-dark hover:text-accent transition-colors font-medium">Offers</a>
+                    <a href="contact.html" class="text-dark hover:text-accent transition-colors font-medium">Contact</a>
+                </div>
+                
+                <!-- Mobile Menu Button -->
+                <button id="mobile-menu-button" class="md:hidden text-dark focus:outline-none">
+                    <i class="fas fa-bars text-2xl"></i>
+                </button>
+            </div>
+            
+            <!-- Mobile Menu -->
+            <div id="mobile-menu" class="md:hidden hidden bg-white mt-4 rounded-lg shadow-lg absolute left-0 right-0 mx-4 p-4 z-50">
+                <div class="flex flex-col space-y-4">
+                    <a href="index.html" class="text-dark hover:text-accent transition-colors font-medium">Home</a>
+                    <a href="services.html" class="text-accent hover:text-secondary transition-colors font-medium">Services</a>
+                    <a href="portfolio.html" class="text-dark hover:text-accent transition-colors font-medium">Portfolio</a>
+                    <a href="offers.html" class="text-dark hover:text-accent transition-colors font-medium">Offers</a>
+                    <a href="contact.html" class="text-dark hover:text-accent transition-colors font-medium">Contact</a>
+                </div>
+            </div>
+        </div>
+    </nav>
+
+    <!-- Page Header -->
+    <section class="pt-32 pb-16 bg-primary">
+        <div class="container mx-auto px-4 text-center">
+            <h1 class="text-4xl md:text-5xl font-serif font-bold text-accent mb-4" data-aos="fade-up">Our Services</h1>
+            <p class="text-xl text-gray-700 max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">Discover our specialized photography services designed to capture the most precious moments of your baby's early days.</p>
+        </div>
+    </section>
+
+    <!-- Services Introduction -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="max-w-3xl mx-auto text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-serif font-bold text-accent mb-6">Capturing Precious Moments</h2>
+                <p class="text-gray-700 leading-relaxed">
+                    At Little Wonders, we specialize in creating timeless images that tell the story of your family's most precious moments. Our professional photographers are trained in newborn safety and handling, ensuring your baby's comfort throughout the session. We offer a range of photography services tailored to different stages of your baby's early life.
+                </p>
+            </div>
+        </div>
+    </section>
+
+    <!-- Newborn Photography -->
+    <section id="newborn" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <!-- Service Image -->
+                <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+                    <img src="images/newborn-photography-full.jpg" alt="Newborn Photography" class="rounded-lg shadow-lg w-full h-auto">
+                </div>
+                
+                <!-- Service Content -->
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h2 class="text-3xl font-serif font-bold text-accent mb-6">Newborn Photography</h2>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Our newborn photography sessions are designed to capture the delicate features and peaceful moments of your baby's first days. These sessions are best scheduled within the first two weeks of life when babies are sleepier and more flexible for posing.
+                    </p>
+                    
+                    <h3 class="text-xl font-serif font-bold text-secondary mb-4">What to Expect:</h3>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>3-4 hour session in our warm, comfortable studio</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>A variety of poses, props, and setups</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>Family and sibling poses included</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>Professional editing and retouching</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>Online gallery with downloadable images</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="portfolio.html#newborn" class="bg-accent hover:bg-secondary text-white font-medium py-3 px-6 rounded-full transition-colors duration-300 inline-block">View Gallery</a>
+                        <a href="contact.html" class="border-2 border-accent hover:bg-accent text-accent hover:text-white font-medium py-3 px-6 rounded-full transition-colors duration-300 inline-block">Book a Session</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Maternity Photography -->
+    <section id="maternity" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <!-- Service Image -->
+                <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-left">
+                    <img src="images/maternity-photography-full.jpg" alt="Maternity Photography" class="rounded-lg shadow-lg w-full h-auto">
+                </div>
+                
+                <!-- Service Content -->
+                <div class="md:w-1/2 md:pr-12" data-aos="fade-right">
+                    <h2 class="text-3xl font-serif font-bold text-accent mb-6">Maternity Photography</h2>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Celebrate the beauty of motherhood with our maternity photography sessions. These sessions are best scheduled between 28-34 weeks when your bump is beautifully rounded but you're still comfortable enough to move around.
+                    </p>
+                    
+                    <h3 class="text-xl font-serif font-bold text-secondary mb-4">What to Expect:</h3>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>1-2 hour session in our studio or at an outdoor location</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>Multiple outfit changes with our maternity gown collection</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>Partner and sibling poses included</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>Professional editing and retouching</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>Online gallery with downloadable images</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="portfolio.html#maternity" class="bg-accent hover:bg-secondary text-white font-medium py-3 px-6 rounded-full transition-colors duration-300 inline-block">View Gallery</a>
+                        <a href="contact.html" class="border-2 border-accent hover:bg-accent text-accent hover:text-white font-medium py-3 px-6 rounded-full transition-colors duration-300 inline-block">Book a Session</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- First-Year Milestone Photography -->
+    <section id="milestone" class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row items-center">
+                <!-- Service Image -->
+                <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-right">
+                    <img src="images/milestone-photography-full.jpg" alt="First-Year Milestone Photography" class="rounded-lg shadow-lg w-full h-auto">
+                </div>
+                
+                <!-- Service Content -->
+                <div class="md:w-1/2 md:pl-12" data-aos="fade-left">
+                    <h2 class="text-3xl font-serif font-bold text-accent mb-6">First-Year Milestone Photography</h2>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Document your baby's growth and development throughout their first year with our milestone photography packages. We capture all the important stages: tummy time, sitting up, standing, and their first birthday celebration.
+                    </p>
+                    
+                    <h3 class="text-xl font-serif font-bold text-secondary mb-4">What to Expect:</h3>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>Multiple sessions throughout the first year (3, 6, 9, and 12 months)</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>Age-appropriate props and setups</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>Cake smash session for first birthday</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>Professional editing and retouching</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>Custom photo album documenting the first year</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="portfolio.html#milestone" class="bg-accent hover:bg-secondary text-white font-medium py-3 px-6 rounded-full transition-colors duration-300 inline-block">View Gallery</a>
+                        <a href="contact.html" class="border-2 border-accent hover:bg-accent text-accent hover:text-white font-medium py-3 px-6 rounded-full transition-colors duration-300 inline-block">Book a Package</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Family Photography -->
+    <section id="family" class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="flex flex-col md:flex-row-reverse items-center">
+                <!-- Service Image -->
+                <div class="md:w-1/2 mb-8 md:mb-0" data-aos="fade-left">
+                    <img src="images/family-photography-full.jpg" alt="Family Photography" class="rounded-lg shadow-lg w-full h-auto">
+                </div>
+                
+                <!-- Service Content -->
+                <div class="md:w-1/2 md:pr-12" data-aos="fade-right">
+                    <h2 class="text-3xl font-serif font-bold text-accent mb-6">Family Portraits</h2>
+                    <p class="text-gray-700 mb-6 leading-relaxed">
+                        Capture the love and connection of your growing family with our family portrait sessions. These timeless images will be cherished for generations to come and make perfect wall art for your home.
+                    </p>
+                    
+                    <h3 class="text-xl font-serif font-bold text-secondary mb-4">What to Expect:</h3>
+                    <ul class="space-y-3 mb-8">
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>1-2 hour session in our studio or at an outdoor location</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>Guidance on what to wear and how to prepare</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>Various poses and groupings</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>Professional editing and retouching</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-check-circle text-accent mt-1 mr-3"></i>
+                            <span>Online gallery with downloadable images</span>
+                        </li>
+                    </ul>
+                    
+                    <div class="flex flex-wrap gap-4">
+                        <a href="portfolio.html#family" class="bg-accent hover:bg-secondary text-white font-medium py-3 px-6 rounded-full transition-colors duration-300 inline-block">View Gallery</a>
+                        <a href="contact.html" class="border-2 border-accent hover:bg-accent text-accent hover:text-white font-medium py-3 px-6 rounded-full transition-colors duration-300 inline-block">Book a Session</a>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Service Packages -->
+    <section class="py-16 bg-gray-50">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-serif font-bold text-accent mb-4">Our Photography Packages</h2>
+                <p class="text-gray-700 max-w-3xl mx-auto">Choose from our carefully designed packages or contact us for a custom session tailored to your specific needs.</p>
+            </div>
+            
+            <div class="grid grid-cols-1 md:grid-cols-3 gap-8">
+                <!-- Basic Package -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="100">
+                    <div class="bg-primary p-6 text-center">
+                        <h3 class="text-2xl font-serif font-bold text-accent">Basic Package</h3>
+                        <p class="text-gray-700 mt-2">Perfect for a single session</p>
+                        <div class="text-3xl font-bold text-accent mt-4">₹12,999</div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>1 photography session (2-3 hours)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>10 professionally edited digital images</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Online gallery for 30 days</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>1 8x10" printed photo</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-times text-red-500 mt-1 mr-3"></i>
+                                <span class="text-gray-500">Props and outfits (available at extra cost)</span>
+                            </li>
+                        </ul>
+                        <div class="mt-8 text-center">
+                            <a href="contact.html" class="bg-accent hover:bg-secondary text-white font-medium py-3 px-6 rounded-full transition-colors duration-300 inline-block w-full">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Premium Package -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="200">
+                    <div class="bg-secondary p-6 text-center relative overflow-hidden">
+                        <div class="absolute top-0 right-0 bg-accent text-white px-4 py-1 transform rotate-45 translate-x-2 -translate-y-3">
+                            <span class="text-xs font-bold">POPULAR</span>
+                        </div>
+                        <h3 class="text-2xl font-serif font-bold text-white">Premium Package</h3>
+                        <p class="text-white mt-2">Our most popular choice</p>
+                        <div class="text-3xl font-bold text-white mt-4">₹19,999</div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>1 photography session (3-4 hours)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>20 professionally edited digital images</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Online gallery for 60 days</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>2 8x10" printed photos</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Props and outfits included</span>
+                            </li>
+                        </ul>
+                        <div class="mt-8 text-center">
+                            <a href="contact.html" class="bg-accent hover:bg-secondary text-white font-medium py-3 px-6 rounded-full transition-colors duration-300 inline-block w-full">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+                
+                <!-- Deluxe Package -->
+                <div class="bg-white rounded-lg shadow-lg overflow-hidden transition-transform duration-300 hover:shadow-xl hover:-translate-y-2" data-aos="fade-up" data-aos-delay="300">
+                    <div class="bg-primary p-6 text-center">
+                        <h3 class="text-2xl font-serif font-bold text-accent">Deluxe Package</h3>
+                        <p class="text-gray-700 mt-2">The complete experience</p>
+                        <div class="text-3xl font-bold text-accent mt-4">₹29,999</div>
+                    </div>
+                    <div class="p-6">
+                        <ul class="space-y-3">
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>2 photography sessions (your choice)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>30 professionally edited digital images</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Online gallery for 90 days</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Custom photo album (10 pages)</span>
+                            </li>
+                            <li class="flex items-start">
+                                <i class="fas fa-check text-green-500 mt-1 mr-3"></i>
+                                <span>Props, outfits, and premium setups</span>
+                            </li>
+                        </ul>
+                        <div class="mt-8 text-center">
+                            <a href="contact.html" class="bg-accent hover:bg-secondary text-white font-medium py-3 px-6 rounded-full transition-colors duration-300 inline-block w-full">Book Now</a>
+                        </div>
+                    </div>
+                </div>
+            </div>
+            
+            <div class="text-center mt-12" data-aos="fade-up">
+                <p class="text-gray-700 mb-6">Looking for something specific? We offer custom packages tailored to your needs.</p>
+                <a href="contact.html" class="border-2 border-accent hover:bg-accent text-accent hover:text-white font-medium py-3 px-8 rounded-full transition-colors duration-300 inline-block">Contact Us for Custom Packages</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- FAQ Section -->
+    <section class="py-16 bg-white">
+        <div class="container mx-auto px-4">
+            <div class="text-center mb-16" data-aos="fade-up">
+                <h2 class="text-3xl font-serif font-bold text-accent mb-4">Frequently Asked Questions</h2>
+                <p class="text-gray-700 max-w-3xl mx-auto">Find answers to our most commonly asked questions about our photography services.</p>
+            </div>
+            
+            <div class="max-w-3xl mx-auto" data-aos="fade-up" data-aos-delay="100">
+                <!-- FAQ Item 1 -->
+                <div class="mb-6">
+                    <button class="faq-question w-full flex justify-between items-center bg-gray-50 p-4 rounded-lg focus:outline-none">
+                        <span class="font-medium text-left">When should I book my newborn photography session?</span>
+                        <i class="fas fa-chevron-down text-accent transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer bg-white p-4 rounded-b-lg hidden">
+                        <p class="text-gray-700">
+                            We recommend booking your newborn session during your second trimester to secure your spot. Newborn sessions are ideally scheduled within the first 5-14 days after birth when babies are sleepier and more flexible for posing. We understand that babies rarely arrive on their due date, so we keep our schedule flexible around your expected due date.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 2 -->
+                <div class="mb-6">
+                    <button class="faq-question w-full flex justify-between items-center bg-gray-50 p-4 rounded-lg focus:outline-none">
+                        <span class="font-medium text-left">How should we prepare for our photography session?</span>
+                        <i class="fas fa-chevron-down text-accent transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer bg-white p-4 rounded-b-lg hidden">
+                        <p class="text-gray-700">
+                            After booking, we'll send you a detailed preparation guide specific to your session type. For newborns, we recommend feeding your baby right before the session to help them sleep. For all sessions, we'll provide guidance on what to wear, what to bring, and how to prepare mentally for a successful and stress-free experience.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 3 -->
+                <div class="mb-6">
+                    <button class="faq-question w-full flex justify-between items-center bg-gray-50 p-4 rounded-lg focus:outline-none">
+                        <span class="font-medium text-left">How long does a typical session last?</span>
+                        <i class="fas fa-chevron-down text-accent transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer bg-white p-4 rounded-b-lg hidden">
+                        <p class="text-gray-700">
+                            Newborn sessions typically last 3-4 hours to allow time for feeding, soothing, and posing. Maternity and family sessions usually take 1-2 hours. Milestone sessions for older babies (3+ months) typically last 1-1.5 hours. We never rush our sessions and always allow plenty of time for breaks, feeding, and comforting as needed.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 4 -->
+                <div class="mb-6">
+                    <button class="faq-question w-full flex justify-between items-center bg-gray-50 p-4 rounded-lg focus:outline-none">
+                        <span class="font-medium text-left">When will we receive our photos?</span>
+                        <i class="fas fa-chevron-down text-accent transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer bg-white p-4 rounded-b-lg hidden">
+                        <p class="text-gray-700">
+                            You'll receive a sneak peek of 2-3 images within 48 hours of your session. The full gallery will be ready within 2-3 weeks. Each image is carefully hand-edited to ensure the highest quality. Once your gallery is ready, you'll receive a link to view, download, and order prints directly from your online gallery.
+                        </p>
+                    </div>
+                </div>
+                
+                <!-- FAQ Item 5 -->
+                <div class="mb-6">
+                    <button class="faq-question w-full flex justify-between items-center bg-gray-50 p-4 rounded-lg focus:outline-none">
+                        <span class="font-medium text-left">Do you provide props and outfits for the sessions?</span>
+                        <i class="fas fa-chevron-down text-accent transition-transform duration-300"></i>
+                    </button>
+                    <div class="faq-answer bg-white p-4 rounded-b-lg hidden">
+                        <p class="text-gray-700">
+                            Yes, we have a wide selection of props, wraps, headbands, and outfits for newborns and babies. For maternity sessions, we have a collection of maternity gowns in various colors and styles. You're also welcome to bring your own special items to incorporate into the session. We'll discuss all options during your pre-session consultation.
+                        </p>
+                    </div>
+                </div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Call to Action Section -->
+    <section class="py-16 bg-primary">
+        <div class="container mx-auto px-4 text-center" data-aos="fade-up">
+            <h2 class="text-3xl font-serif font-bold text-accent mb-4">Ready to Book Your Session?</h2>
+            <p class="text-xl text-gray-700 mb-8 max-w-3xl mx-auto">Contact us today to check availability and reserve your spot.</p>
+            <div class="flex flex-wrap justify-center gap-4">
+                <a href="contact.html" class="bg-accent hover:bg-secondary text-white font-medium py-3 px-8 rounded-full transition-colors duration-300 inline-block">Book a Session</a>
+                <a href="portfolio.html" class="border-2 border-accent hover:bg-accent text-accent hover:text-white font-medium py-3 px-8 rounded-full transition-colors duration-300 inline-block">View Our Portfolio</a>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="bg-dark text-white py-12">
+        <div class="container mx-auto px-4">
+            <div class="grid grid-cols-1 md:grid-cols-2 lg:grid-cols-4 gap-8">
+                <!-- About Column -->
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Little Wonders</h3>
+                    <p class="text-gray-300 mb-4">Velachery's most loved newborn photography studio specializing in creating timeless memories of your baby's first days.</p>
+                    <div class="flex space-x-4">
+                        <a href="#" class="text-white hover:text-primary transition-colors">
+                            <i class="fab fa-facebook-f"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-primary transition-colors">
+                            <i class="fab fa-instagram"></i>
+                        </a>
+                        <a href="#" class="text-white hover:text-primary transition-colors">
+                            <i class="fab fa-pinterest"></i>
+                        </a>
+                    </div>
+                </div>
+                
+                <!-- Quick Links -->
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Quick Links</h3>
+                    <ul class="space-y-2">
+                        <li><a href="index.html" class="text-gray-300 hover:text-primary transition-colors">Home</a></li>
+                        <li><a href="services.html" class="text-gray-300 hover:text-primary transition-colors">Services</a></li>
+                        <li><a href="portfolio.html" class="text-gray-300 hover:text-primary transition-colors">Portfolio</a></li>
+                        <li><a href="offers.html" class="text-gray-300 hover:text-primary transition-colors">Offers</a></li>
+                        <li><a href="contact.html" class="text-gray-300 hover:text-primary transition-colors">Contact</a></li>
+                        <li><a href="privacy-policy.html" class="text-gray-300 hover:text-primary transition-colors">Privacy Policy</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Services -->
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Our Services</h3>
+                    <ul class="space-y-2">
+                        <li><a href="services.html#newborn" class="text-gray-300 hover:text-primary transition-colors">Newborn Photography</a></li>
+                        <li><a href="services.html#maternity" class="text-gray-300 hover:text-primary transition-colors">Maternity Photography</a></li>
+                        <li><a href="services.html#milestone" class="text-gray-300 hover:text-primary transition-colors">First-Year Milestones</a></li>
+                        <li><a href="services.html#family" class="text-gray-300 hover:text-primary transition-colors">Family Portraits</a></li>
+                    </ul>
+                </div>
+                
+                <!-- Contact Info -->
+                <div>
+                    <h3 class="text-xl font-serif font-bold mb-4">Contact Us</h3>
+                    <ul class="space-y-3">
+                        <li class="flex items-start">
+                            <i class="fas fa-map-marker-alt mt-1 mr-3"></i>
+                            <span>123 Velachery Main Road, Chennai - 600042</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-phone-alt mt-1 mr-3"></i>
+                            <span>+91 98765 43210</span>
+                        </li>
+                        <li class="flex items-start">
+                            <i class="fas fa-envelope mt-1 mr-3"></i>
+                            <span>info@littlewonders.com</span>
+                        </li>
+                    </ul>
+                </div>
+            </div>
+            
+            <div class="border-t border-gray-700 mt-10 pt-6 text-center">
+                <p class="text-gray-400">&copy; 2023 Little Wonders Photography Studio. All rights reserved.</p>
+            </div>
+        </div>
+    </footer>
+
+    <!-- Scroll to Top Button -->
+    <button id="scroll-to-top" class="fixed bottom-6 right-6 bg-accent hover:bg-secondary text-white w-12 h-12 rounded-full flex items-center justify-center shadow-lg transition-all duration-300 opacity-0 invisible">
+        <i class="fas fa-chevron-up"></i>
+    </button>
+
+    <!-- AOS Animation Library -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/aos/2.3.4/aos.js"></script>
+    <!-- Custom JavaScript -->
+    <script src="js/main.js"></script>
+    <!-- Schema.org Structured Data -->
+    <script src="js/schema.js"></script>
+    <!-- Social Sharing -->
+    <script src="js/social-share.js"></script>
+    <!-- Cookie Consent -->
+    <script src="js/cookie-consent.js"></script>
+</body>
+</html>

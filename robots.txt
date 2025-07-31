@@ -1,0 +1,11 @@
+# robots.txt for Little Wonders Photography Studio
+
+User-agent: *
+Allow: /
+
+Sitemap: https://www.littlewonders.com/sitemap.xml
+
+# Disallow access to any admin or private areas if they exist
+Disallow: /admin/
+Disallow: /private/
+Disallow: /includes/
